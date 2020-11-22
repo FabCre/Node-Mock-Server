@@ -27,7 +27,7 @@ function requestHandler(routes) {
            return;
         }
 
-        const fromCache = responseCache[response.url];
+        const fromCache = responseCache[request.url];
 
         if (fromCache !== undefined) {
             console.log(COLOR_GREEN, request.url, "200 (from cache)", COLOR_WHITE);

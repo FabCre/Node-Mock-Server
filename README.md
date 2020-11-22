@@ -10,3 +10,21 @@
 - Manage a simple cache to reduce js object serialization
 
 ## Example
+
+``` JavaScript
+const { buildBasicMockServer } = require('../basic-mock-server');
+
+// Pass a config object to build the mock server
+buildBasicMockServer({
+    appName: 'Example Web Api',
+    port: 3697,
+    routes: [
+        {
+            // Routes that contains "/users"
+            path: "/users",
+            // Path to the json that will be return as reponse body
+            response: require("./users.json")
+        }
+    ]
+});
+```
