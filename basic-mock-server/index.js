@@ -6,7 +6,7 @@ const COLOR_YELLOW = "\x1b[33m";
 const COLOR_WHITE = "\x1b[37m";
 
 const DEFAULT_CONFIG = {
-    appName: "basic-mock-server",
+    appName: "Node Json Mock Server",
     port: 3698,
     routes: [{
         path: '/readme',
@@ -73,7 +73,7 @@ function buildBasicMockServer(config) {
         if (error) {
             return console.error(COLOR_RED, "Something wrong happened", error.stack, COLOR_WHITE);
         }
-        console.log(`${serverConfig.appName} is listening on ${serverConfig.port}`)
+        console.log(`${serverConfig.appName} is listening on http://localhost:${serverConfig.port}/`)
     })
 }
 

@@ -1,5 +1,5 @@
 {
-  "hello": "Hello, the basic server is up and running !",
+  "hello": "Hello, the basic server is up and running!",
   "simple": "Just an index.js with one function exported to build a mock server.",
-  "pure": "No dependencies !"
+  "pure": "No dependencies!"
 }

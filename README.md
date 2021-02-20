@@ -12,6 +12,7 @@
 ## Example
 
 ``` JavaScript
+// File example-web-api.js
 const { buildBasicMockServer } = require('../basic-mock-server');
 
 // Pass a config object to build the mock server
@@ -27,4 +28,9 @@ buildBasicMockServer({
         }
     ]
 });
+```
+
+``` node
+// Just run the script
+node example-web-api.js
 ```
